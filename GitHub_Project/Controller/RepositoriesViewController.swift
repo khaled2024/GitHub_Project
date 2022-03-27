@@ -19,6 +19,7 @@ class RepositoriesViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Repositories"
         repositoriesTableView.delegate = self
         repositoriesTableView.dataSource = self
         self.configCell()
@@ -76,7 +77,7 @@ extension RepositoriesViewController: UITableViewDataSource, UITableViewDelegate
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {

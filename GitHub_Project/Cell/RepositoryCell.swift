@@ -9,6 +9,7 @@ import UIKit
 
 class RepositoryCell: UITableViewCell {
 
+    @IBOutlet weak var ownerImage: UIImageView!
     @IBOutlet weak var RepositoryNameLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +24,10 @@ class RepositoryCell: UITableViewCell {
     }
     //MARK: - Private func
     func configureCell(with repository: Repository){
-        RepositoryNameLbl.text = repository.name
+        RepositoryNameLbl.text = repository.repName
+        guard let owner = repository.owner else{return}
+        guard let imageUrl = owner.ownerImage else{return}
+        self.ownerImage.load(urlString: imageUrl)
     }
     
 }

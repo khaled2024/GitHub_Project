@@ -7,6 +7,16 @@
 
 import Foundation
 struct Repository: Codable {
-    let name: String?
-    
+    let repName: String?
+    let owner: Owner?
+    enum CodingKeys: String,CodingKey{
+        case repName = "name"
+        case owner
+    }
+}
+struct Owner: Codable{
+    let ownerImage: String?
+    enum CodingKeys: String,CodingKey{
+        case ownerImage = "avatar_url"
+    }
 }

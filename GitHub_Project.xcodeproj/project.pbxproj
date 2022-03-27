@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA38B89F27F0A8150067BA86 /* UiimageView+UrlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38B89E27F0A8150067BA86 /* UiimageView+UrlExtension.swift */; };
+		EA38B8A327F0AEBA0067BA86 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38B8A127F0AEBA0067BA86 /* RepositoriesViewController.swift */; };
+		EA38B8A427F0AEBA0067BA86 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA38B8A227F0AEBA0067BA86 /* RepositoriesViewController.xib */; };
 		EA70B37127EBDD84004444D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B37027EBDD84004444D2 /* AppDelegate.swift */; };
 		EA70B37327EBDD84004444D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B37227EBDD84004444D2 /* SceneDelegate.swift */; };
-		EA70B37827EBDD84004444D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70B37627EBDD84004444D2 /* Main.storyboard */; };
 		EA70B37A27EBDD86004444D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA70B37927EBDD86004444D2 /* Assets.xcassets */; };
 		EA70B37D27EBDD86004444D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70B37B27EBDD86004444D2 /* LaunchScreen.storyboard */; };
-		EA70B38527EBDFA1004444D2 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B38427EBDFA1004444D2 /* RepositoriesViewController.swift */; };
 		EA70B38727EBDFE8004444D2 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B38627EBDFE8004444D2 /* Repository.swift */; };
 		EA70B38F27EBE0AC004444D2 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B38D27EBE0AC004444D2 /* RepositoryCell.swift */; };
 		EA70B39027EBE0AC004444D2 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA70B38E27EBE0AC004444D2 /* RepositoryCell.xib */; };
@@ -20,14 +21,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA38B89E27F0A8150067BA86 /* UiimageView+UrlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiimageView+UrlExtension.swift"; sourceTree = "<group>"; };
+		EA38B8A127F0AEBA0067BA86 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		EA38B8A227F0AEBA0067BA86 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
 		EA70B36D27EBDD84004444D2 /* GitHub_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70B37027EBDD84004444D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA70B37227EBDD84004444D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA70B37727EBDD84004444D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA70B37927EBDD86004444D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA70B37C27EBDD86004444D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA70B37E27EBDD86004444D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA70B38427EBDFA1004444D2 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		EA70B38627EBDFE8004444D2 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EA70B38D27EBE0AC004444D2 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 		EA70B38E27EBE0AC004444D2 /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
@@ -45,9 +47,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA38B89D27F0A7DF0067BA86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA38B89E27F0A8150067BA86 /* UiimageView+UrlExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA38B8A027F0AEA20067BA86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA38B8A127F0AEBA0067BA86 /* RepositoriesViewController.swift */,
+				EA38B8A227F0AEBA0067BA86 /* RepositoriesViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		EA70B36427EBDD83004444D2 = {
 			isa = PBXGroup;
 			children = (
+				EA70B37027EBDD84004444D2 /* AppDelegate.swift */,
+				EA70B37227EBDD84004444D2 /* SceneDelegate.swift */,
 				EA70B36F27EBDD84004444D2 /* GitHub_Project */,
 				EA70B36E27EBDD84004444D2 /* Products */,
 			);
@@ -64,14 +85,12 @@
 		EA70B36F27EBDD84004444D2 /* GitHub_Project */ = {
 			isa = PBXGroup;
 			children = (
+				EA38B8A027F0AEA20067BA86 /* Controller */,
+				EA38B89D27F0A7DF0067BA86 /* Extensions */,
 				EA70B39127EBE13A004444D2 /* Services */,
-				EA70B37027EBDD84004444D2 /* AppDelegate.swift */,
-				EA70B37227EBDD84004444D2 /* SceneDelegate.swift */,
-				EA70B37627EBDD84004444D2 /* Main.storyboard */,
 				EA70B37927EBDD86004444D2 /* Assets.xcassets */,
 				EA70B37B27EBDD86004444D2 /* LaunchScreen.storyboard */,
 				EA70B37E27EBDD86004444D2 /* Info.plist */,
-				EA70B38427EBDFA1004444D2 /* RepositoriesViewController.swift */,
 				EA70B38627EBDFE8004444D2 /* Repository.swift */,
 				EA70B38C27EBE05C004444D2 /* Cell */,
 			);
@@ -155,7 +174,7 @@
 			files = (
 				EA70B37D27EBDD86004444D2 /* LaunchScreen.storyboard in Resources */,
 				EA70B37A27EBDD86004444D2 /* Assets.xcassets in Resources */,
-				EA70B37827EBDD84004444D2 /* Main.storyboard in Resources */,
+				EA38B8A427F0AEBA0067BA86 /* RepositoriesViewController.xib in Resources */,
 				EA70B39027EBE0AC004444D2 /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,8 +188,9 @@
 			files = (
 				EA70B38F27EBE0AC004444D2 /* RepositoryCell.swift in Sources */,
 				EA70B37127EBDD84004444D2 /* AppDelegate.swift in Sources */,
+				EA38B89F27F0A8150067BA86 /* UiimageView+UrlExtension.swift in Sources */,
 				EA70B39327EBE157004444D2 /* ApiService.swift in Sources */,
-				EA70B38527EBDFA1004444D2 /* RepositoriesViewController.swift in Sources */,
+				EA38B8A327F0AEBA0067BA86 /* RepositoriesViewController.swift in Sources */,
 				EA70B37327EBDD84004444D2 /* SceneDelegate.swift in Sources */,
 				EA70B38727EBDFE8004444D2 /* Repository.swift in Sources */,
 			);
@@ -179,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EA70B37627EBDD84004444D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA70B37727EBDD84004444D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA70B37B27EBDD86004444D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -323,7 +335,6 @@
 				INFOPLIST_FILE = GitHub_Project/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -351,7 +362,6 @@
 				INFOPLIST_FILE = GitHub_Project/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
