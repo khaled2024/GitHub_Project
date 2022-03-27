@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		EA70B37127EBDD84004444D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B37027EBDD84004444D2 /* AppDelegate.swift */; };
 		EA70B37327EBDD84004444D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B37227EBDD84004444D2 /* SceneDelegate.swift */; };
-		EA70B37527EBDD84004444D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B37427EBDD84004444D2 /* ViewController.swift */; };
 		EA70B37827EBDD84004444D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70B37627EBDD84004444D2 /* Main.storyboard */; };
 		EA70B37A27EBDD86004444D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA70B37927EBDD86004444D2 /* Assets.xcassets */; };
 		EA70B37D27EBDD86004444D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA70B37B27EBDD86004444D2 /* LaunchScreen.storyboard */; };
+		EA70B38527EBDFA1004444D2 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B38427EBDFA1004444D2 /* RepositoriesViewController.swift */; };
+		EA70B38727EBDFE8004444D2 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B38627EBDFE8004444D2 /* Repository.swift */; };
+		EA70B38F27EBE0AC004444D2 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B38D27EBE0AC004444D2 /* RepositoryCell.swift */; };
+		EA70B39027EBE0AC004444D2 /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA70B38E27EBE0AC004444D2 /* RepositoryCell.xib */; };
+		EA70B39327EBE157004444D2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA70B39227EBE157004444D2 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA70B36D27EBDD84004444D2 /* GitHub_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA70B37027EBDD84004444D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA70B37227EBDD84004444D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA70B37427EBDD84004444D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA70B37727EBDD84004444D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA70B37927EBDD86004444D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA70B37C27EBDD86004444D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA70B37E27EBDD86004444D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA70B38427EBDFA1004444D2 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		EA70B38627EBDFE8004444D2 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		EA70B38D27EBE0AC004444D2 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		EA70B38E27EBE0AC004444D2 /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		EA70B39227EBE157004444D2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		EA70B36F27EBDD84004444D2 /* GitHub_Project */ = {
 			isa = PBXGroup;
 			children = (
+				EA70B39127EBE13A004444D2 /* Services */,
 				EA70B37027EBDD84004444D2 /* AppDelegate.swift */,
 				EA70B37227EBDD84004444D2 /* SceneDelegate.swift */,
-				EA70B37427EBDD84004444D2 /* ViewController.swift */,
 				EA70B37627EBDD84004444D2 /* Main.storyboard */,
 				EA70B37927EBDD86004444D2 /* Assets.xcassets */,
 				EA70B37B27EBDD86004444D2 /* LaunchScreen.storyboard */,
 				EA70B37E27EBDD86004444D2 /* Info.plist */,
+				EA70B38427EBDFA1004444D2 /* RepositoriesViewController.swift */,
+				EA70B38627EBDFE8004444D2 /* Repository.swift */,
+				EA70B38C27EBE05C004444D2 /* Cell */,
 			);
 			path = GitHub_Project;
+			sourceTree = "<group>";
+		};
+		EA70B38C27EBE05C004444D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EA70B38D27EBE0AC004444D2 /* RepositoryCell.swift */,
+				EA70B38E27EBE0AC004444D2 /* RepositoryCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EA70B39127EBE13A004444D2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EA70B39227EBE157004444D2 /* ApiService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,7 @@
 				EA70B37D27EBDD86004444D2 /* LaunchScreen.storyboard in Resources */,
 				EA70B37A27EBDD86004444D2 /* Assets.xcassets in Resources */,
 				EA70B37827EBDD84004444D2 /* Main.storyboard in Resources */,
+				EA70B39027EBE0AC004444D2 /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA70B37527EBDD84004444D2 /* ViewController.swift in Sources */,
+				EA70B38F27EBE0AC004444D2 /* RepositoryCell.swift in Sources */,
 				EA70B37127EBDD84004444D2 /* AppDelegate.swift in Sources */,
+				EA70B39327EBE157004444D2 /* ApiService.swift in Sources */,
+				EA70B38527EBDFA1004444D2 /* RepositoriesViewController.swift in Sources */,
 				EA70B37327EBDD84004444D2 /* SceneDelegate.swift in Sources */,
+				EA70B38727EBDFE8004444D2 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
